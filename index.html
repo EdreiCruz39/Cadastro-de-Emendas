@@ -99,13 +99,20 @@
     </div>
     <h1>Formulário de Cadastro de Contas</h1>
     <form>
+      <label for="entidade">Entidade(Unidade Gestora):</label>
+      <input type="text" id="entidade" name="entidade">
+
+      <label for="unidade orçamentária">Unidade Orçamentária (Secretaria Responsável):</label>
+      <input type="text" id="unidade orçamentária" name="unidade orçamentária">
+      
       <label for="tipoEmenda">Tipo de Emenda:</label>
       <select id="tipoEmenda" name="tipoEmenda">
         <option></option>
-        <option>Emenda não impositiva</option>
+        <option>Emenda de comissão</option>
+         <option>Emenda não impositiva (Emendas de Comissão e de relatoria)</option>
         <option>Emenda parlamentar de bancada ou de bloco</option>
         <option>Emenda parlamentar individual</option>
-        <option>Emenda parlamentar de transferência especial (PIX)</option>
+        <option>Emenda PIX</option>
       </select>
 
       <label for="esfera">Esfera:</label>
@@ -116,11 +123,20 @@
         <option>Municipal</option>
       </select>
 
-      <label for="anoEmenda">Ano da Emenda:</label>
-      <input type="text" id="anoEmenda" name="anoEmenda">
+      <label for="objeto">Objeto:</label>
+      <input type="text" id="objeto" name="objeto">
 
+      <label for="nomeEmenda">Nome da Emenda:</label>
+      <input type="text" id="nomeEmenda" name="nomeEmenda">
+      
       <label for="numeroEmenda">Número da Emenda:</label>
       <input type="text" id="numeroEmenda" name="numeroEmenda">
+
+      <label for="anoEmenda">Ano da Emenda:</label>
+      <input type="text" id="anoEmenda" name="anoEmenda">
+      
+      <label for="datarecebimento">Data de Recebimento da Emenda:</label>
+      <input type="date" id="datarecebimento" name="datarecebimento" lang="pt-BR">
 
       <label for="nomeParlamentar">Nome do Parlamentar:</label>
       <input type="text" id="nomeParlamentar" name="nomeParlamentar">
@@ -128,23 +144,23 @@
       <label for="partido">Partido Político:</label>
       <input type="text" id="partido" name="partido">
 
-      <label for="valor">Valor:</label>
-      <input type="text" id="valor" name="valor">
+      <label for="valor">Valor Previsto:</label>
+      <input type="text" id="valorprevisto" name="valorprevisto">
+
+      <label for="valor">Valor Realizado:</label>
+      <input type="text" id="valorrealizado" name="valorrealizado">
+
+      <label for="contaBancaria">Número da Conta Bancária:</label>
+      <input type="text" id="contaBancaria" name="contaBancaria">
 
       <label for="Banco">Banco:</label>
       <input type="text" id="Banco" name="Banco">
 
       <label for="Agência Bancária">Agência Bancária:</label>
       <input type="text" id="Agência Bancária" name="Agência Bancária">
-      
-      <label for="contaBancaria">Número da Conta Bancária:</label>
-      <input type="text" id="contaBancaria" name="contaBancaria">
 
       <label for="fonteRecurso">Fonte de Recurso:</label>
       <input type="text" id="fonteRecurso" name="fonteRecurso">
-
-      <label for="objeto">Objeto:</label>
-      <input type="text" id="objeto" name="objeto">
 
       <label for="localInvestimento">Local da Aplicação:</label>
       <input type="text" id="localInvestimento" name="localInvestimento">
@@ -288,7 +304,36 @@
         <option>753 - Combustíveis Minerais</option>
         <option>754 - Biocombustíveis</option>
       </select>
+      
+      <label for="situacao">Situação:</label>
+      <select id="situacao" name="situacao">
+        <option></option>
+        <option>Aguardando o Pagamento</option>
+        <option>Pago</option>
+      </select>
+
+      <label for="situacao">Situação:</label>
+      <select id="situacao" name="situacao">
+        <option></option>
+        <option>Aguardando o Pagamento</option>
+        <option>Pago</option>
+      </select>
+
+      <label for="modalidade">Modalidade:</label>
+      <select id="modalidade" name="modalidade">
+        <option></option>
+        <option>Com finalidade definida</option>
+        <option>Especial</option>
+      </select>
+
+      <label for="beneficiario">Nome do Beneficiário:</label>
+      <input type="text" id="beneficiario" name="beneficiario">
+
+      <label for="cnpjbeneficiario">CNPJ do Beneficiário:</label>
+      <input type="text" id="cnpjbeneficiario" name="cnpjbeneficiario">
+      
       <br><br>
+      
       <label for="assinatura">Nome e assinatura do responsável pelas informações do cadastro:</label>
       <div style="border: 1px solid #ccc; height: 80px; margin-top: 10px; border-radius: 5px;"></div>
     </form>
